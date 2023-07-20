@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-main.css">
+    <title>Simple Math Tools</title>
+  </head>
+  <body>
+    <div class="flex-box">
+      <!-- Javascript Calculator -->
+      <div class="description">Javascript Calculator:</div>
+      <input id="in-box-cal" type="text" placeholder="0"></input>
+      <button onclick="handleClickCal()">Calculate</button>
+      <!-- Binary-Decimal Converter -->
+      <div class="description">Convert Binary to Decimal and vice versa:</div>
+      <input id="in-box-bin" type="text" placeholder="Type your message"></input>
+      <button onclick="handleClickBin()">Convert</button>
+      <!-- Factoriser -->
+      <div class="description">Factorise a number:</div>
+      <input id="in-box-fac" type="text" placeholder="Enter a number"></input>
+      <button onclick="handleClickFac()">Factorise</button>
+      <!-- Differentiator -->
+      <div class="description">Differentiate a function:</div>
+      <input id="in-box-der-f" type="text" placeholder="Enter a function of x"></input>
+      <input id="in-box-der-p" class="in-box-small" type="text" placeholder="Enter the value of x"></input>
+      <button onclick="handleClickDer()">Derive</button>
+      <!-- Integrator -->
+      <div class="description">Integrate a function:</div>
+      <input id="in-box-intg-f" type="text" placeholder="Enter a function of x"></input>
+      <div class="flex-box-alt">
+      <input id="in-box-intg-ll" class="in-box-small" type="text" placeholder="Enter lower limit"></input>
+      <input id="in-box-intg-ul" class="in-box-small" type="text" placeholder="Enter upper limit"></input>
+      </div>
+      <button onclick="handleClickIntg()">Integrate</button>
+      <!-- Equation Solver -->
+      <div class="description">Find the roots of a function:</div>
+      <input id="in-box-sol-f" type="text" placeholder="Enter a function of x"></input>
+      <div class="flex-box-alt">
+      <input id="in-box-sol-ll" class="in-box-small" type="text" placeholder="Enter lower limit"></input>
+      <input id="in-box-sol-ul" class="in-box-small" type="text" placeholder="Enter upper limit"></input>
+      </div>
+      <button onclick="handleClickSol()">Solve</button>
+      
+      <textarea id="out-box" disabled></textarea>
+  </body>
+  <script type="text/javascript" src="scripts-main.js"></script>
+</html>
